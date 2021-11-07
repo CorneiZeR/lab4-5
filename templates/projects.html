@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+        <div class="container-fluid d-flex justify-content-center py-5 bg-grey">
+            <div class="row justify-content-center align-items-center w-50" style="height: 450px;">
+                <div class="col-md-8 text-center">
+                    <h3 class="pb-5">Мои проекты</h3>
+                    <p class="text-mute pb-5">Все свои большие проекты я храню в git репозиториях. Ниже я приведу их скриншоты. Можете ознакимится с ними подробнее</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white text-center p-5">
+            <div class="mb-5">
+                <a href="https://github.com/CorneiZeR">
+                    <img src="{{url_for('static', filename = 'media/github.png')}}" width="100%" class="img-fluid">
+                </a>
+            </div>
+            <div>
+                <a href="https://gitlab.com/corneizer">
+                    <img src="{{url_for('static', filename = 'media/gitlab.png')}}" width="100%" class="img-fluid">
+                </a>
+            </div>
+        </div>
+
+{% endblock %}

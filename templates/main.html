@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+        <div class="container-fluid row cols-2 justify-content-evenly py-5 bg-grey">
+            <div class="col-md-5 d-flex justify-content-end align-items-center mb-5">
+                <object data="{{url_for('static', filename = 'media/notebook.svg')}}" width="357px" type=""></object>
+            </div>
+            <div class="col-md-5 d-flex align-items-center mb-5" style="height: 300px;">
+                <div>
+                    <h1 class="pb-5">Разработка Back-End</h1>
+                    <p class="text-mute pb-5">Django — свободный фреймворк для веб-приложений на языке Python, использующий шаблон проектирования MVC. Проект поддерживается организацией Django Software Foundation.</p>
+                    <a class="btn-blue mb-5" href="#contact-form">НАПИСАТЬ МНЕ</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center bg-white">
+            <div class="col-md-5 text-center">
+                <h2 class="py-5">
+                    Обо мне
+                </h2>
+                <p class="text-mute pb-5">
+                    Я Back-End разработчик, предпочитающий быстрые и</br>каественные решения. Для этого я использую язык программирование Python и</br>>фреймворк Django (Django был разработан, чтобы помочь</br>разработчикам как можно быстрее доводить приложения до</br>завершения)
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid row cols-2 justify-content-evenly py-5 bg-grey">
+            <div class="col-md-3 text-center bg-light-blue my-5">
+                <h2 class="py-5">
+                    Мой стэк
+                </h2>
+                <p class="text-mute pb-5">
+                    Я пишу на Python, знаю SQL базы данных.</br>Умею разрабатывать архитектуру БД,</br>реализовывать ее и вывоить все это в REST API.</br>Быстро и качественно работаю с библиотеками</br>requesrs bs4, selenium. Хорошо знаком с</br>системами контроля версий (git).</br>
+                </p>
+            </div>
+            <div class="col-md-3 text-center bg-light-blue my-5">
+                <h2 class="py-5">
+                    Мои примеры работ
+                </h2>
+                <p class="text-mute pb-5">
+                    Вы можете полностью ознакомится с качеством моей работы в GIT репозиториях! Я работал с юридическими проектами и проектами сравнения характеристик/цен разных товаров.
+                </p>
+            </div>
+        </div>
+
+        <div class="text-center bg-white py-5">
+            <h2 class="py-5">
+                Отзывы о моей работы
+            </h2>
+            <img class="img-fluid pb-5 radius" src="{{url_for('static', filename = 'media/reports.png')}}">
+        </div>
+
+        <div class="d-flex justify-content-center bg-grey py-2">
+            <div class="col-xl-4 col-mb-4 col-sm-10 text-center">
+                <h2 class="py-5">
+                    Хотите веб-сайт?
+                </h2>
+                <form class="mb-5" id="contact-form" action="{{ url_for('index') }}" method="post">
+                    <div class="row g-3 mb-3">
+                        <div class="col">
+                            <input type="text" class="form-control border-none" placeholder="Ваше имя" name="name" id="name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control border-none" placeholder="Ваш e-mail" name="email" id="email">
+                        </div>
+                    </div>
+                    <textarea class="form-control border-none mb-5" placeholder="Сообщение" name="message" id="message" style="height: 200px"></textarea>
+                    <input type="submit" class="btn-blue">
+                </form>
+            </div>
+        </div>
+
+{% endblock %}

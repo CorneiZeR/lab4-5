@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+a, p, h1, h2 {
+    font-family: 'Roboto', sans-serif !important;
+    color: #000000;
+}
+
+a, h1, h2, h3, h4, .text-mute {
+    font-weight: 500;
+}
+
+a:hover {
+    color: #34547A !important;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+span {
+    font-size: 16px;
+}
+
+.text-mute {
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+.btn-blue {
+    color: #ffffff;
+    background-color: #34547A;
+    padding: 25px 40px 25px 40px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300 !important;
+    letter-spacing: 0.1em;
+    transition: 150ms ease-in-out;
+}
+
+.btn-blue:hover {
+    background-color: #CEEEEA;
+}
+
+.radius {
+    border-radius: 30px;
+}
+
+.border-none {
+    border-radius: 0;
+    border-width: 0;
+}
+
+input {
+    height: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li{
+    float: left;
+}
+
+.progress {
+    margin: 30px 0 50px 0;
+}
+
+.low {
+    height: 4px !important;
+    background-color: #C4C4C4 !important;
+    margin: 10px 0 10px 0 !important;
+}
+
+.card-size {
+    width: 200px;
+}
+
+shadow {
+   box-shadow: -1px 5px 10px -5px rgb(34 60 80) !important;
+}
+
+.bg-white {
+    background-color: #F9F9F9 !important;
+}
+
+.bg-grey {
+    background-color: #EEEFF1 !important;
+}
+
+.bg-blue {
+    background-color: #34547A;
+}
+
+.bg-light-blue {
+    background-color: #CEEEEA !important;
+    border-radius: 25px;
+}

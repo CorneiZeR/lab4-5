@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+        <div class="container-fluid row cols-2 justify-content-evenly pt-5 bg-grey">
+            <div class="col-md-4 d-flex justify-content-end align-items-center mb-5">
+                <div style="width: 450px;">
+                    <h2 class="my-5">Мои навыки</h2>
+                    <span class="text-mute">
+                        Python
+                    </span>
+                    <div class="progress low shadow">
+                        <div class="progress-bar bg-blue" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span class="text-mute">
+                        Django
+                    </span>
+                    <div class="progress low shadow">
+                        <div class="progress-bar bg-blue" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span class="text-mute">
+                        SQL databases
+                    </span>
+                    <div class="progress low shadow">
+                        <div class="progress-bar bg-blue" role="progressbar" style="width: 94%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span class="text-mute">
+                        requests, bs4, selenium...
+                    </span>
+                    <div class="progress low shadow">
+                        <div class="progress-bar bg-blue" role="progressbar" style="width: 98%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 d-flex align-items-center mb-5">
+                <img class="img-fluid radius shadow" width="555" src="{{url_for('static', filename = 'media/face.png')}}">
+            </div>
+        </div>
+
+        <div class="bg-blue py-5">
+            <div class="row row-cols-lg-6 row-cols-md-6 row-cols-sm-1 justify-content-center py-5" style="--bs-gutter-x: 0% !important;">
+                <div class="row cols-2 align-content-center card-size">
+                    <div class="col">
+                        <object data="{{url_for('static', filename = 'media/project.svg')}}" type=""></object>
+                    </div>
+                    <div class="col text-white">
+                        <h4>40+</h4>
+                        <p class="text-white">проектов</p>
+                    </div>
+                </div>
+                <div class="row cols-2 align-content-center card-size">
+                    <div class="col">
+                        <object data="{{url_for('static', filename = 'media/project.svg')}}" type=""></object>
+                    </div>
+                    <div class="col text-white">
+                        <h4>10+</h4>
+                        <p class="text-white">парсеров</p>
+                    </div>
+                </div>
+                <div class="row cols-2 align-content-center card-size">
+                    <div class="col">
+                        <object data="{{url_for('static', filename = 'media/project.svg')}}" type=""></object>
+                    </div>
+                    <div class="col text-white">
+                        <h4>50+</h4>
+                        <p class="text-white">модулей</p>
+                    </div>
+                </div>
+                <div class="row cols-2 align-content-center card-size">
+                    <div class="col">
+                        <object data="{{url_for('static', filename = 'media/project.svg')}}" type=""></object>
+                    </div>
+                    <div class="col text-white">
+                        <h4>5+</h4>
+                        <p class="text-white">серверов</p>
+                    </div>
+                </div>
+                <div class="row cols-2 align-content-center card-size">
+                    <div class="col">
+                        <object data="{{url_for('static', filename = 'media/project.svg')}}" type=""></object>
+                    </div>
+                    <div class="col text-white">
+                        <h4>5+</h4>
+                        <p class="text-white">проектов</p>
+                    </div>
+                </div>
+                <div class="row cols-2 align-content-center card-size">
+                    <div class="col">
+                        <object data="{{url_for('static', filename = 'media/project.svg')}}" type=""></object>
+                    </div>
+                    <div class="col text-white">
+                        <h4>10+</h4>
+                        <p class="text-white">модулей</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center bg-white py-5">
+            <div class="col-xl-4 col-mb-4 col-sm-10">
+                <h2 class="text-center py-5">
+                    Опыт работы
+                </h2>
+                <h3>Python 1.5 year +</h3>
+                <div class="progress" style="width: 100%;">
+                    <div class="bg-success w-100"></div>
+                </div>
+                <h3>SQL Databases 1 year +</h3>
+                <div class="progress" style="width: 70%;">
+                    <div class="bg-danger w-100"></div>
+                </div>
+                <h3>Parsers 1 year +</h3>
+                <div class="progress" style="width: 70%;">
+                    <div class="bg-warning w-100"></div>
+                </div>
+                <h3>Django 0.5 year +</h3>
+                <div class="progress" style="width: 50%;">
+                    <div class="bg-info w-100"></div>
+                </div>
+            </div> 
+        </div>
+
+{% endblock %}
