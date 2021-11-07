@@ -25,8 +25,10 @@ def index():
                       sender=request.form['email'],
                       recipients=['kolosyuk1@gmail.com'],
                       body=f'{request.form["message"]}\n\n\nЛист відправлено з вашого сайту')
-
-        mail.send(msg)
+        try:
+            mail.send(msg)
+        except AssertionError:
+            pass
         return render_template('main.html', form=form)
     else:
         return render_template('main.html', form=form)
