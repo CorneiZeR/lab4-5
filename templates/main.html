@@ -2,15 +2,17 @@
 
 {% block content %}
 
-        <div class="container-fluid row cols-2 justify-content-evenly py-5 bg-grey">
-            <div class="col-md-5 d-flex justify-content-end align-items-center mb-5">
-                <object data="{{url_for('static', filename = 'media/notebook.svg')}}" width="357px" type=""></object>
-            </div>
-            <div class="col-md-5 d-flex align-items-center mb-5" style="height: 300px;">
-                <div>
-                    <h1 class="pb-5">Разработка Back-End</h1>
-                    <p class="text-mute pb-5">Django — свободный фреймворк для веб-приложений на языке Python, использующий шаблон проектирования MVC. Проект поддерживается организацией Django Software Foundation.</p>
-                    <a class="btn-blue mb-5" href="#contact-form">НАПИСАТЬ МНЕ</a>
+        <div class="container-fluid cols-2 justify-content-evenly py-5 bg-grey">
+            <div class="row">
+                <div class="col-md-5 d-flex justify-content-end align-items-center mb-5">
+                    <object data="{{url_for('static', filename = 'media/notebook.svg')}}" width="357px" type=""></object>
+                </div>
+                <div class="col-md-5 d-flex align-items-center mb-5" style="height: 300px;">
+                    <div>
+                        <h1 class="pb-5">Разработка Back-End</h1>
+                        <p class="text-mute pb-5">Django — свободный фреймворк для веб-приложений на языке Python, использующий шаблон проектирования MVC. Проект поддерживается организацией Django Software Foundation.</p>
+                        <a class="btn-blue mb-5" href="#contact-form">НАПИСАТЬ МНЕ</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -26,22 +28,24 @@
             </div>
         </div>
 
-        <div class="container-fluid row cols-2 justify-content-evenly py-5 bg-grey">
-            <div class="col-md-3 text-center bg-light-blue my-5">
-                <h2 class="py-5">
-                    Мой стэк
-                </h2>
-                <p class="text-mute pb-5">
-                    Я пишу на Python, знаю SQL базы данных.</br>Умею разрабатывать архитектуру БД,</br>реализовывать ее и вывоить все это в REST API.</br>Быстро и качественно работаю с библиотеками</br>requesrs bs4, selenium. Хорошо знаком с</br>системами контроля версий (git).</br>
-                </p>
-            </div>
-            <div class="col-md-3 text-center bg-light-blue my-5">
-                <h2 class="py-5">
-                    Мои примеры работ
-                </h2>
-                <p class="text-mute pb-5">
-                    Вы можете полностью ознакомится с качеством моей работы в GIT репозиториях! Я работал с юридическими проектами и проектами сравнения характеристик/цен разных товаров.
-                </p>
+        <div class="container-fluid py-5 bg-grey">
+            <div class="row cols-2 justify-content-evenly">
+                <div class="col-md-3 text-center bg-light-blue my-5">
+                    <h2 class="py-5">
+                        Мой стэк
+                    </h2>
+                    <p class="text-mute pb-5">
+                        Я пишу на Python, знаю SQL базы данных.</br>Умею разрабатывать архитектуру БД,</br>реализовывать ее и вывоить все это в REST API.</br>Быстро и качественно работаю с библиотеками</br>requesrs bs4, selenium. Хорошо знаком с</br>системами контроля версий (git).</br>
+                    </p>
+                </div>
+                <div class="col-md-3 text-center bg-light-blue my-5">
+                    <h2 class="py-5">
+                        Мои примеры работ
+                    </h2>
+                    <p class="text-mute pb-5">
+                        Вы можете полностью ознакомится с качеством моей работы в GIT репозиториях! Я работал с юридическими проектами и проектами сравнения характеристик/цен разных товаров.
+                    </p>
+                </div>
             </div>
         </div>
 
