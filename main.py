@@ -22,8 +22,8 @@ def index():
     form = ContactForm()
     if request.method == 'POST':
         msg = Message(subject=f'Питання з сайту від {request.form["name"]}',
-                      sender=request.form['email'],
-                      recipients=['kolosyuk1@gmail.com'],
+                      sender='kolosyuk1@gmail.com',
+                      recipients=['kolosyuk1@gmail.com', request.form['email']],
                       body=f'{request.form["message"]}\n\n\nЛист відправлено з вашого сайту')
         try:
             mail.send(msg)
